@@ -1,0 +1,147 @@
+<!-- 
+    Main file name: index.html
+    How to create an HTML tag: <tag attribite="value">Content</tag>
+    <tag /> -> autoclosed tag
+
+    <h1>Trachea<h1>
+    
+        <h2>Bronchial tube</h2>
+        <h3>Bronchiole</h3>
+
+        ...
+    <div>
+    <h> - title and subtitles
+    h1 - Browser and google look for the h1 to show the page
+    h2 - h6 -> subtitles // order of importance
+    Dont jump from an h1 to an h3-4 -> go to h2
+    <p> - paragraph / Text that is not title or subtitle (for now)
+    <a> - link (href specifigc property)
+    <div> -> grouping tag (it can contain other tags inside)
+
+   
+    <section>
+        <h2></h2>
+            <section class="subsection">
+                <h3></h3>
+                    <section class="subsubsection">
+                        <h4></h4>
+                    </section>
+            </section>
+    <section>
+    <section>
+    <h2>
+        <section class="subsection">
+            <h3></h3>
+                <section class="subsubsection">
+                    <h4></h4>
+                </section>
+        </section>
+    <section>
+    
+
+-----------------------
+   HTML Notas:
+    Hypertext Markup Language: 
+    It's a markup language, not a programming language. It doesn't follow programming languages rules.
+    What does it mean to "mark"? Websites need to be understood and interpreted by machines, software and computers in adition to people. So, in order to create a graphical piece that's going to be only visual for us, it has to be understood by a machine as well. For it to be done, we have to technically mark the different content parts of a website.
+    We use tags as the language pieces to mark up the different parts and concepts in the website.
+ 
+    ----------------------
+    Minimal code for a HTML file:
+    -IT ALWAYS HAS TO START WITH THE HTML TAG-
+
+    <!DOCTYPE html> -> defines we are using HTML5 and we are going to use the latest tags
+    <html> -> defines starting and ending point of the document
+        <head> </head> -> website information (user doesn't see it)
+        <body> </body> -> website content (user can see it)
+    </html>
+
+    <head>
+    <meta charset= “utf-8”> -> website encription depending on the symbol language to be read by the website
+    </head>
+
+    ----------------------
+    Every open tag has to be closed. Some of them are closed at the same time they are opened.
+    For example: <br/> o <hr/>  -> they don't have content (that's why)
+    
+    They are different than the ones that have content: <p>Content</p>
+    
+    ----------------------
+     UNIVERSAL ATTRIBUTES HTML (ALL TAGS)
+        id -> one by project and tag (it's almost never used)
+        class -> can be used multiple times and can be repeated, repetition is used to set special styles
+        style -> inline style only applicable to that particular tag
+        name -> specific name
+
+        --------------
+        CSS - Cascade stylesheet
+        
+        SYNTAXIS
+
+        tag {
+            style-name: value;
+        }
+        .class {
+            style-name: value;
+        }
+        #id {
+            style-name: value;
+        }
+
+        # -> identifies any id in css // specificity 100
+        . -> identifies any class in css // specificity 10
+        tag -> identifies tags in css // specificity 1
+
+
+        PRIORIDAD EN BASE AL ORIGEN
+        1º-> cualquier style que se ponga en línea en la etiqueta del html (nada lo supera)
+        2º -> cualquier style que esté en el head
+        3º -> cualquier style que esté en un fichero css importado
+
+        -----------------------  
+        RUTA ABSOLUTA
+        href="https://www.google.com"
+        href="C://Users/Loohan/Desktop/Clases/Juan/Clase 01-02/clase-03.html"
+
+        RUTA RELATIVA
+        href="./clase-03.html"
+        href="../clase-03-afuera.html"
+
+
+        Anchor Tag interno: 
+        Cuando pongo un elemento a con un href="#" local y luego le pongo un elemento anchor para que se desplace internamente hacia allí:
+        Si el elemento no es un <a> debo ponerle un id
+        Si el elemento es un <a> debo ponerle un name
+-->
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link href="./styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <h1>ONE ALLOWED IN THE WHOLE PAGE</h1> 
+    </header>
+    <main>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+<script src="">
+    const header = document.getElementById('header')
+    console.log(header);
+</script>
