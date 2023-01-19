@@ -1,0 +1,27 @@
+class DoSth (newNumber){
+        private int number = 1000; 
+        getNumber {
+            return number
+        }
+        setNumber {
+            number = newNumber
+        }
+    }
+
+    DoSth.getNumber() // 1000
+    DoSth.setNumber(8000)
+    DoSth.getNumber() // 8000
+    DoSth.setNumber('I am a string') // will throw an error
+    -------------------
+    let number = 1000;
+
+    const changeNumber = (newNumber) => {
+        number = newNumber;
+    }
+
+    console.log(number) //1000
+    changeNumber(8000)
+    console.log(number) // 8000
+
+    changeNumber('I am a string')
+    console.log(number) // 'I am a string'

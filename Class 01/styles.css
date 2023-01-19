@@ -1,7 +1,33 @@
-/* * {
+/* 
+* {
     margin: 0;
     padding: 0;
-} */
+} 
+
+PRIORITY BASED IN ORIGIN 
+        1ª -> Any style anywhere with an !important in it (not recommend it, nothing overrides it) -> AVOID
+        2º -> Any inline style in the html tag (only !important overrides it) -> AVOID
+        3º -> Any style in the head in a <style> tag -> AVOID
+        4º -> Any style in an external css file
+
+PRIORITY BASED ON IMPORTANCE (SPECIFICITY)
+
+        # -> identifies any id in css // specificity 100
+        . -> identifies any class in css // specificity 10
+        tag -> identifies tags in css // specificity 1
+
+PRIORITY BASED ON LINE BY LINE ORDER
+        #header .title {
+            color:chartreuse;
+        }
+
+        #header .title {
+            color:crimson;
+        }
+
+        If you have repeated code, the browser will choose the one its written last so this title will be crimson
+
+*/
 
 body {
     color:aliceblue;
@@ -13,6 +39,22 @@ body {
 
 ul {
     list-style: none;
+}
+
+/* .title {
+    color: blueviolet !important;
+} */
+
+#header .title {
+    color:chartreuse;
+}
+
+#header .title {
+    color:crimson;
+}
+
+#header .title.header-title {
+    color:darkcyan;
 }
 
 .title {

@@ -1,7 +1,7 @@
 <!-- 
     Main file name: index.html
-    How to create an HTML tag: <tag attribite="value">Content</tag>
-    <tag /> -> autoclosed tag
+    How to create an HTML tag: <tag attribute="value">Content</tag>
+    <tag attribute="value" /> -> autoclosed tag
 
     <h1>Trachea<h1>
     
@@ -15,10 +15,18 @@
     h2 - h6 -> subtitles // order of importance
     Dont jump from an h1 to an h3-4 -> go to h2
     <p> - paragraph / Text that is not title or subtitle (for now)
-    <a> - link (href specifigc property)
-    <div> -> grouping tag (it can contain other tags inside)
+    <span> -> to style parts of our text (they are usually enclosed in a text tag)
+    <a href="anydomain/anyrelativepath"> - link (href specifigc attribute)
+    <div> -> non semantic grouping tag (it can contain other tags inside)
+    <section>
+    <header> 
+    <aside> -> left side
+    <main>
+    <aside> -> right side
+    <footer>   
+    <nav> -> usually all the links
+    
 
-   
     <section>
         <h2></h2>
             <section class="subsection">
@@ -45,7 +53,7 @@
     It's a markup language, not a programming language. It doesn't follow programming languages rules.
     What does it mean to "mark"? Websites need to be understood and interpreted by machines, software and computers in adition to people. So, in order to create a graphical piece that's going to be only visual for us, it has to be understood by a machine as well. For it to be done, we have to technically mark the different content parts of a website.
     We use tags as the language pieces to mark up the different parts and concepts in the website.
- 
+
     ----------------------
     Minimal code for a HTML file:
     -IT ALWAYS HAS TO START WITH THE HTML TAG-
@@ -72,12 +80,10 @@
         class -> can be used multiple times and can be repeated, repetition is used to set special styles
         style -> inline style only applicable to that particular tag
         name -> specific name
-
         --------------
         CSS - Cascade stylesheet
         
         SYNTAXIS
-
         tag {
             style-name: value;
         }
@@ -87,17 +93,6 @@
         #id {
             style-name: value;
         }
-
-        # -> identifies any id in css // specificity 100
-        . -> identifies any class in css // specificity 10
-        tag -> identifies tags in css // specificity 1
-
-
-        PRIORITY BASED IN ORIGIN 
-        1º-> Any inline style in the html tag (nothing overrides it)
-        2º -> Any style in the head in a <style> tag
-        3º -> Any style in an external css file
-
         -------------------
         strong -> bold with semantic meaning
         b -> bold without semantic meaning
@@ -127,14 +122,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <title>Class 01</title>
+    <!-- <style>
+        .title {
+            color: blue;
+        }
+    </style> -->
 </head>
 <body>
     <header id="header">
-        <h1 class="title">ONE ALLOWED IN THE WHOLE PAGE</h1> 
+        <!--<h1 style="color: red;" class="title">ONE ALLOWED IN THE WHOLE PAGE</h1>-->
+        <h1 class="title header-title">ONE ALLOWED IN THE WHOLE PAGE</h1> 
         <h2 class="subtitle">Subtitle</h2> 
     </header>
     <main class="main">
+        <button onClick="onClick()">Click me!</button>
         <ul>
             <li>First Item</li>
             <li>Second Item</li>
@@ -186,4 +188,8 @@
 <script src="">
     const header = document.getElementById('header')
     console.log(header);
+
+    const onClick = () => {
+            console.log('I clicked sth!')
+        }
 </script>
