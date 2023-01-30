@@ -32,7 +32,8 @@ PRIORITY BASED ON LINE BY LINE ORDER
 body {
     color:aliceblue;
     font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Unbounded', cursive;
+    /*font-family: Arial, Helvetica, sans-serif;*/
     font-weight: normal;
     /* font-style: italic ; */
 }
@@ -75,4 +76,10 @@ ul {
 
 .font-rem {
     font-size: 1rem;
+}
+
+.square {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
 }
