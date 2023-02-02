@@ -9,3 +9,9 @@
     background-color: red;
     position: relative;
 }
+
+/*---------------------------------- INLINE, BLOCK, INLINE-BLOCK, FLEXBOX -----------------------*/
+
+.block {
+    display: block;
+}
