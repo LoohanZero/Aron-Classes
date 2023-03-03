@@ -55,9 +55,54 @@ function oldFunction() {
 // console.log('END sync code: 2nd console.log')
 
 //---------------------------------
+ 
+// const concatenation = "1" +  1;
+// console.log(1 + 1); // If they are numbers, javascript adds them
+// console.log(typeof concatenation);
+// console.log("1" +  1); // if one is a string, it concatenates them because if one is a string it assumes that what you want to do is join strings so the number is converted to a string
+// console.log("1" - 1); // If one is is a string you cannot substract sth to a string so it assumes the string is a number and forces a conversion from the string to number
+ 
+// console.log('SHOWS TYPE OF VARIABLE, SHOULD SAY NUMBER', typeof 1);
+// console.log('SHOWS TYPE OF VARIABLE, SHOULD SAY BOOLEAN', typeof true);
+// console.log('SHOWS TYPE OF VARIABLE, SHOULD SAY STRING', typeof 'Aron');
+// console.log('SHOWS TYPE OF VARIABLE, SHOULD SAY OBJECT', typeof {});
+// console.log('SHOWS TYPE OF VARIABLE, SHOULD SAY OBJECT', typeof []);
+
+// console.log('NUMBER', 2 === 2);
+// console.log('STRING', "aron" === "aron");
+// console.log('OBJECT',  {} === {});
+// console.log('ARRAY', [] === []);
+const isObjectEmpty = Object.keys({}).length === 0;
+
+// DIFFERENCE BETWEEN OBJECTS AND ARRAYS
+// THEY HAVE DIFFERENT METHODS
+
+// METHOD LENGTH DOESNT EXIST IN THE OBJETCS
+// INDEX IS ARRAYS IS THE KEY, VALUE IS THE VALUE -> []
+// YOU CANNOT USE NUMBERS AS KEYS IN OBJECTS, ONLY STRINGS
+
+// const array = [ 'Aron' ]
+// const object = {
+//     name: "Aron"
+// }
+
+// console.log(object.name); //DOT NOTATION - ARRAYS DONT HAVE IT
+// console.log(object['name']); // BRACKET NOTATION
+
+// console.log(array[0]); // BRACKET NOTATION
+// console.log(isObjectEmpty)
+
+//---------------------------------
+// ! --> negates the value, gives the opossit back
+// FALSY AND TRUTHY VALUES - 
+// FALSY: null, undefined, '' (empty string), 0
+// TRUTHY VALUES: 'aron', [], {}, any number that's not 0
+
+console.log(0 == {})
+
+//--------------------------
 console.log(1 + 1); // 2 - addition
 console.log("1" + 1) //11 - concatenation
 console.log(1 - 1); // 0 - substraction
 console.log(2 * 2); // 4 -multiplication
 console.log(2 / 2) // 1 - division
- 
